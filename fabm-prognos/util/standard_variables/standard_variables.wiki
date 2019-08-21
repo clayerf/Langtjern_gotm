@@ -1,0 +1,65 @@
+## Bulk variables
+|Variable|Units|Corresponding name in [CF convention](http://cfconventions.org/Data/cf-standard-names/28/build/cf-standard-name-table.html)|
+|---|---|---|
+|Hice|m||
+|alkalinity_expressed_as_mole_equivalent|mmol m-3|sea_water_alkalinity_expressed_as_mole_equivalent|
+|attenuation_coefficient_of_photosynthetic_radiative_flux|m-1||
+|attenuation_coefficient_of_shortwave_flux|m-1||
+|cell_thickness|m|cell_thickness|
+|density|kg m-3|sea_water_density|
+|depth|m|depth|
+|downwelling_photosynthetic_radiative_flux|W m-2|downwelling_photosynthetic_radiative_flux_in_sea_water|
+|downwelling_shortwave_flux|W m-2|downwelling_shortwave_flux_in_sea_water|
+|fractional_saturation_of_oxygen|1|fractional_saturation_of_oxygen_in_sea_water|
+|mass_concentration_of_suspended_matter|g m-3|mass_concentration_of_suspended_matter_in_sea_water|
+|mole_concentration_of_ammonium|mmol m-3|mole_concentration_of_ammonium_in_sea_water|
+|mole_concentration_of_carbonate_expressed_as_carbon|mmol m-3|mole_concentration_of_carbonate_expressed_as_carbon_in_sea_water|
+|mole_concentration_of_dissolved_inorganic_carbon|mmol m-3|mole_concentration_of_dissolved_inorganic_carbon_in_sea_water|
+|mole_concentration_of_dissolved_iron|umol m-3|mole_concentration_of_dissolved_iron_in_sea_water|
+|mole_concentration_of_nitrate|mmol m-3|mole_concentration_of_nitrate_in_sea_water|
+|mole_concentration_of_phosphate|mmol m-3|mole_concentration_of_phosphate_in_sea_water|
+|mole_concentration_of_silicate|mmol m-3|mole_concentration_of_silicate_in_sea_water|
+|ph_reported_on_total_scale|1|sea_water_ph_reported_on_total_scale|
+|practical_salinity|1e-3|sea_water_practical_salinity|
+|pressure|dbar|sea_water_pressure|
+|temperature|degree_Celsius|sea_water_temperature|
+
+
+## Horizontal variables
+|Variable|Units|Corresponding name in [CF convention](http://cfconventions.org/Data/cf-standard-names/28/build/cf-standard-name-table.html)|
+|---|---|---|
+|HiceS|m||
+|bottom_depth|m||
+|bottom_depth_below_geoid|m|sea_floor_depth_below_geoid|
+|bottom_roughness_length|m||
+|bottom_stress|Pa||
+|cloud_area_fraction|1|cloud_area_fraction|
+|latitude|degree_north|latitude|
+|longitude|degree_east|longitude|
+|mole_fraction_of_carbon_dioxide_in_air|1e-6|mole_fraction_of_carbon_dioxide_in_air|
+|surface_air_pressure|Pa|surface_air_pressure|
+|surface_downwelling_photosynthetic_radiative_flux|W m-2|surface_downwelling_photosynthetic_radiative_flux_in_sea_water|
+|surface_downwelling_photosynthetic_radiative_flux_in_air|W m-2|surface_downwelling_photosynthetic_radiative_flux_in_air|
+|surface_downwelling_shortwave_flux|W m-2||
+|surface_downwelling_shortwave_flux_in_air|W m-2|surface_downwelling_shortwave_flux_in_air|
+|surface_specific_humidity|1|surface_specific_humidity|
+|surface_temperature|degree_Celsius|surface_temperature|
+|wind_speed|m s-1|wind_speed|
+
+
+## Global variables
+|Variable|Units|Corresponding name in [CF convention](http://cfconventions.org/Data/cf-standard-names/28/build/cf-standard-name-table.html)|
+|---|---|---|
+|number_of_days_since_start_of_the_year|d||
+
+
+## Conserved variables
+|Variable|Units|Corresponding name in [CF convention](http://cfconventions.org/Data/cf-standard-names/28/build/cf-standard-name-table.html)|
+|---|---|---|
+|total_carbon|mmol m-3||
+|total_iron|umol m-3||
+|total_nitrogen|mmol m-3||
+|total_phosphorus|mmol m-3||
+|total_silicate|mmol m-3||
+
+

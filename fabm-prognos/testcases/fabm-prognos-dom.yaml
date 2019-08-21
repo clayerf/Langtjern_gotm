@@ -1,0 +1,17 @@
+instances:
+  dom:
+    model: prognos/dom
+    parameters:
+      Km_O2: 0.0123      # respiration (mmol m-3), default = 0.0123
+      Km_NO3: 0.01       # denitrification (mmol m-3), default = 0.01
+      Kin_O2: 0.33       # inhibitation of denitrification by O2 (mmol m-3), default = 0.33
+      kOM1: 1.0          # OM1 degradation (year-1), default = 1.0
+      kOM2: 0.1          # OM2 degradation (year-1), default = 0.1
+      oc_DOC: 0.01       # Optical cross section of DOM (??????), default = 0.01
+      qy_DOM: 0.1        # Quantum yield (??????), default = 0.1
+      F_par: 0.45        # PAR fraction (??????), default = 0.45
+      E_par: 240800.0    # Energy of PAR photons (J mol-1), default = 240800.0
+      theta: 1.047       # temperature adjustment coefficient (J mol-1), default = 1.047
+    initialization:
+      DOMa: 10.0         # nutrients (mmol m-3)
+      DOMb: 20.0         # phytoplankton (mmol m-3)

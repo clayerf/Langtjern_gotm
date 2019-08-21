@@ -1,0 +1,9 @@
+# The fortran modules provided by this target.
+provides
+ fabm_niva_brom_bio
+ fabm_niva_brom_carb
+ fabm_niva_brom_eqconst
+ fabm_niva_brom_redox
+ fabm_niva_brom_salt
+ fabm_niva_oxydep
+ niva_model_library

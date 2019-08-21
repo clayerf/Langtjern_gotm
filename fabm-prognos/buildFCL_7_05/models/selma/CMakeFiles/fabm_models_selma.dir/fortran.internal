@@ -1,0 +1,6 @@
+# The fortran modules provided by this target.
+provides
+ selma
+ selma_model_library
+ selma_phytoplankton
+ selma_zooplankton

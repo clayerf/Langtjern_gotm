@@ -1,0 +1,15 @@
+*.i90
+*.mod
+*.obj
+*.suo
+*.u2d
+*.nc
+*.patch
+lib/
+modules/
+build/
+timestamp
+VERSION
+include/version.h
+*.pyc
+.ipynb_checkpoints/

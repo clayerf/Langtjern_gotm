@@ -1,0 +1,5 @@
+# The fortran modules provided by this target.
+provides
+ prognos_dom
+ prognos_mixo
+ prognos_model_library

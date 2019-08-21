@@ -1,0 +1,5 @@
+# The fortran modules provided by this target.
+provides
+ jrc_bsem
+ jrc_med_ergom
+ jrc_model_library

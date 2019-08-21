@@ -1,0 +1,53 @@
+extpressure.F90:5:! !ROUTINE: The external pressure-gradient \label{sec:extpressure}
+extpressure.F90:12:!  This subroutine calculates the external pressure-gradient. Two methods
+extpressure.F90:26:!  For both cases, this is a recalculation of the external pressure gradient,
+extpressure.F90:30:!  If the external pressure-gradient is prescribed by the
+extpressure.F90:44:!  pressure gradient
+extpressure.F90:104:!     pressure gradient is applied directly
+salinity.F90:40:!  horizontal gradients $\partial_xS$ and $\partial_yS$ and
+vequation.F90:84:!  pressure gradient
+vequation.F90:126:!  set external pressure gradient
+vequation.F90:170:!     add external and internal pressure gradients
+intpressure.F90:5:! !ROUTINE: The internal pressure-gradient \label{sec:intpressure}
+intpressure.F90:18:!  the components of the pressure-gradient may be expressed as
+intpressure.F90:37:!  and \eq{InternalPressurey} is the external pressure-gradient
+intpressure.F90:38:!  due to surface slopes,  and the second the internal pressure-gradient
+intpressure.F90:39:!  due to the density gradient.
+intpressure.F90:40:!  The internal pressure-gradient will only be established by
+intpressure.F90:41:!  gradients of mean potential temperature $\Theta$ and mean
+intpressure.F90:45:!  In this subroutine, first, the horizontal buoyancy gradients,
+intpressure.F90:47:!  are calculated from the prescribed gradients of salinity, $\partial_xS$
+intpressure.F90:71:!  arbitrary length scales. The buoyancy gradients computed with this method
+intpressure.F90:75:! The horizontal salinity and temperature gradients have to supplied by the
+intpressure.F90:109:!     and pressure gradient
+intpressure.F90:121:!        buoyancy gradient in x direction
+intpressure.F90:128:!        buoyancy gradient in y direction
+intpressure.F90:138:!     internal pressure gradient in x direction
+intpressure.F90:146:!     internal pressure gradient in y direction
+temperature.F90:8:   subroutine temperature(nlev,dt,cnpar,I_0,heat,nuh,gamh,rad,Hice,h_frazil)
+temperature.F90:40:!  horizontal gradients $\partial_x\Theta$ and $\partial_y\Theta$ and
+temperature.F90:45:!  The sum of latent, sensible, and longwave radiation is treated
+temperature.F90:46:!  as a boundary condition. Solar radiation is treated as an inner
+temperature.F90:97:!  surface short waves radiation  (W/m^2)
+temperature.F90:111:!  shortwave radiation profile (W/m^2)
+temperature.F90:112:   REALTYPE                            :: rad(0:nlev)
+temperature.F90:184:!  initalize radiation
+temperature.F90:185:   rad(nlev)  = I_0
+temperature.F90:192:!     compute short wave radiation
+temperature.F90:193:      rad(i)=I_0*(A*exp(-z/g1)+(1.-A)*exp(-z/g2)*bioshade(i+1))
+temperature.F90:231:   Qsour(nlev)=(I_0-rad(nlev-1))/(rho_0*cp*h(nlev))
+temperature.F90:233:!     from radiation
+temperature.F90:234:      Qsour(i) = (rad(i)-rad(i-1))/(rho_0*cp*h(i))
+meanflow.F90:52:!  buoyancy, short-wave radiation,
+meanflow.F90:54:   REALTYPE, public, dimension(:), allocatable  :: buoy,rad,xP
+meanflow.F90:387:   allocate(rad(0:nlev),stat=rc)
+meanflow.F90:388:   if (rc /= 0) STOP 'init_meanflow: Error allocating (rad)'
+meanflow.F90:389:   rad = _ZERO_
+meanflow.F90:486:   if (allocated(rad)) deallocate(rad)
+meanflow.F90:547:   if (allocated(rad)) LEVEL2 'rad',rad
+uequation.F90:42:!  The external pressure gradient (second term on right hand side)
+uequation.F90:44:!  directly given. Otherwise, the gradient is computed as
+uequation.F90:46:!  The internal pressure gradient (third
+uequation.F90:105:!  pressure gradient
+uequation.F90:148:!  set external pressure gradient
+uequation.F90:192:!     add external and internal pressure gradients
